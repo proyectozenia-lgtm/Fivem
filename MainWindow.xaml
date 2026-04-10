@@ -1,0 +1,81 @@
+<Window x:Class="FiveMOptimizerFinal.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="FiveM Optimizer"
+        Height="550"
+        Width="600"
+        WindowStartupLocation="CenterScreen"
+        Background="#1E1E1E">
+
+	<Grid Margin="10">
+		<Grid.RowDefinitions>
+			<RowDefinition Height="Auto"/>
+			<RowDefinition Height="Auto"/>
+			<RowDefinition Height="Auto"/>
+			<RowDefinition Height="Auto"/>
+			<RowDefinition Height="Auto"/>
+			<RowDefinition Height="Auto"/>
+			<RowDefinition Height="Auto"/>
+			<RowDefinition Height="*"/>
+		</Grid.RowDefinitions>
+
+		<TextBlock Grid.Row="0" Text="FiveM Optimizer"
+                   FontSize="20" FontWeight="Bold"
+                   Foreground="#00D4FF"
+                   HorizontalAlignment="Center"
+                   Margin="0,0,0,15"/>
+
+		<GroupBox Grid.Row="1" Header="CPU (Ryzen 7)" Margin="0,5" Foreground="White">
+			<CheckBox x:Name="chkCPU" Content="Desactivar parking de nucleos" Margin="10" IsChecked="True" Foreground="White"/>
+		</GroupBox>
+
+		<GroupBox Grid.Row="2" Header="GPU (RTX 3050 4GB)" Margin="0,5" Foreground="White">
+			<StackPanel>
+				<CheckBox x:Name="chkMPO" Content="Desactivar MPO (evita pantalla negra)" Margin="10" IsChecked="True" Foreground="White"/>
+				<CheckBox x:Name="chkHAGS" Content="Desactivar HAGS (reduce stuttering)" Margin="10" IsChecked="True" Foreground="White"/>
+				<CheckBox x:Name="chkLowLatency" Content="Activar Ultra Baja Latencia" Margin="10" IsChecked="True" Foreground="White"/>
+				<CheckBox x:Name="chkVRAM" Content="Limitar VRAM a 3GB (CRITICO)" Margin="10" IsChecked="True" Foreground="#FFAA00"/>
+			</StackPanel>
+		</GroupBox>
+
+		<GroupBox Grid.Row="3" Header="Red" Margin="0,5" Foreground="White">
+			<StackPanel>
+				<CheckBox x:Name="chkNetwork" Content="Desactivar Nagle (menor latencia)" Margin="10" IsChecked="True" Foreground="White"/>
+				<CheckBox x:Name="chkDNS" Content="Limpiar DNS cache" Margin="10" IsChecked="True" Foreground="White"/>
+			</StackPanel>
+		</GroupBox>
+
+		<GroupBox Grid.Row="4" Header="Sistema" Margin="0,5" Foreground="White">
+			<StackPanel>
+				<CheckBox x:Name="chkClean" Content="Limpiar archivos temporales" Margin="10" IsChecked="True" Foreground="White"/>
+				<CheckBox x:Name="chkHibernation" Content="Desactivar hibernacion" Margin="10" IsChecked="True" Foreground="White"/>
+			</StackPanel>
+		</GroupBox>
+
+		<GroupBox Grid.Row="5" Header="FiveM" Margin="0,5" Foreground="White">
+			<StackPanel>
+				<CheckBox x:Name="chkFiveMCache" Content="Limpiar cache de FiveM" Margin="10" IsChecked="True" Foreground="White"/>
+			</StackPanel>
+		</GroupBox>
+
+		<StackPanel Grid.Row="6" Orientation="Horizontal" HorizontalAlignment="Center" Margin="0,15">
+			<Button x:Name="btnTurbo" Content="🚀 TURBO MODE"
+                    Width="200" Height="40" Margin="5"
+                    Background="#FF6B35" Foreground="White"
+                    FontWeight="Bold" Cursor="Hand"/>
+			<Button x:Name="btnUndo" Content="↩️ Deshacer"
+                    Width="120" Height="40" Margin="5"
+                    Background="#555555" Foreground="White"
+                    Cursor="Hand"/>
+			<Button x:Name="btnMonitor" Content="📊 VRAM"
+                    Width="100" Height="40" Margin="5"
+                    Background="#00D4FF" Foreground="White"
+                    Cursor="Hand"/>
+		</StackPanel>
+
+		<TextBlock x:Name="lblStatus" Grid.Row="7" Text="✅ Listo"
+                   Foreground="#00FF88"
+                   HorizontalAlignment="Center"
+                   Margin="0,10"/>
+	</Grid>
+</Window>
