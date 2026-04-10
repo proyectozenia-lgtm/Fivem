@@ -1,0 +1,13 @@
+{
+  "profiles": {
+    "FiveMOptimizerPro": {
+      "commandName": "Project",
+      "nativeDebugging": false,
+      "environmentVariables": {
+        "DOTNET_CLI_TELEMETRY_OPTOUT": "1",
+        "DOTNET_TieredCompilation": "1",
+        "DOTNET_ReadyToRun": "1"
+      }
+    }
+  }
+}

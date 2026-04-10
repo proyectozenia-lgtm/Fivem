@@ -1,0 +1,6 @@
+C:\Users\Mohamed\Downloads\FiveMOptimizerPro\obj\Debug\net8.0-windows\win-x64\FiveMOptimizerPro.csproj.AssemblyReference.cache
+C:\Users\Mohamed\Downloads\FiveMOptimizerPro\obj\Debug\net8.0-windows\win-x64\App.g.cs
+C:\Users\Mohamed\Downloads\FiveMOptimizerPro\obj\Debug\net8.0-windows\win-x64\FiveMOptimizerPro_MarkupCompile.cache
+C:\Users\Mohamed\Downloads\FiveMOptimizerPro\obj\Debug\net8.0-windows\win-x64\FiveMOptimizerPro_MarkupCompile.lref
+C:\Users\Mohamed\Downloads\FiveMOptimizerPro\obj\Debug\net8.0-windows\win-x64\MainWindow.baml
+C:\Users\Mohamed\Downloads\FiveMOptimizerPro\obj\Debug\net8.0-windows\win-x64\MainWindow.g.cs
